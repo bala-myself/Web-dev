@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Nanotechnology</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <section class="signup-section">
+        <div class="signup-container">
+            <h1>Create Your Account</h1>
+            <form id="signupForm" action="#" method="POST">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="signup-button">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </section>
+
+    <!-- JavaScript for redirecting to landing page -->
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Basic validation (In a real app, you would store this data in a database)
+            if (username && email && password) {
+                // Redirect to the landing page (assuming it's named 'index.html')
+                window.location.href = 'nano.html';
+            } else {
+                alert('Please fill out all fields.');
+            }
+        });
+    </script>
+
+</body>
+</html>

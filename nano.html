@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanotechnology Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+<section id="hero" class="hero-section">
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776; <!-- This is the menu icon (3 horizontal bars) -->
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#applications">Applications</a></li>
+            <li><a href="#future">Future Vision</a></li>
+            <li><a href="#team">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="floating-molecule molecule1"></div>
+    <div class="floating-molecule molecule1"></div>
+    <div class="floating-molecule molecule2"></div>
+    <div class="floating-molecule molecule3"></div>
+    <div class="floating-molecule molecule4"></div>
+    <div class="floating-molecule molecule5"></div>
+    <div class="floating-molecule molecule6"></div>
+    <div class="floating-molecule molecule7"></div>
+    <div class="floating-molecule molecule2"></div>
+     <div class="floating-molecule molecule3"></div>
+    <div class="hero-container">
+        <h1 class="hero-title">Explore the World of Nanotechnology</h1>
+        <p class="hero-subtitle">Innovating the Future, One Nano at a Time</p>
+        <a href="index.html" class="hero-button">Explore Now</a>
+    </div>
+</section>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("nav-links");
+            if (navLinks.style.display === "block") {
+                navLinks.style.display = "none";
+            } else {
+                navLinks.style.display = "block";
+            }
+        }
+        </script>
+        
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2>Unlock the Future with Nanotechnology</h2>
+            <p>Join us on a journey into the future, where nanotechnology shapes innovation across industries. Stay ahead of the curve and be part of the revolution.</p>     
+            <a href="login.html" class="cta-button">Login</a> 
+            <a href="signup.html" class="cta-button">Sign Up</a>
+        </div>
+    </section>
+
+  <!-- About Nanotechnology Section -->
+<section id="about" class="about-nanotechnology">
+   
+    <h2 class="section-title">About Nanotechnology</h2>
+    <p class="about-description">
+        Nanotechnology is a branch of science and engineering focused on designing, producing, and using structures, 
+        devices, and systems by manipulating atoms and molecules at nanoscale, i.e., having one or more dimensions of 
+        the order of 100 nanometres (100 millionth of a millimeter) or less. 
+    </p>
+    <p class="about-description">
+        This technology is significant because it enables scientists to develop new materials and devices with highly 
+        specific properties, such as improved strength, lighter weight, and enhanced chemical reactivity.
+    </p>
+    <p class="about-description">
+        Nanotechnology is used in various sectors, including medicine, electronics, energy, and materials science. 
+        In medicine, for example, nanotechnology is enabling new ways to target cancer cells with drugs, 
+        minimizing side effects.
+    </p>
+    <p class="about-description">
+        In electronics, nanotechnology has helped in developing smaller, faster, and more powerful devices 
+        such as smartphones, laptops, and microprocessors. It has also impacted the field of environmental science 
+        by creating innovative ways to remove pollutants.
+    </p>
+    
+    <!-- Image centered -->
+    <div class="image-container">
+        <img src= 'nano.jpg' alt="Nanotechnology Image" class="center-photo">
+    </div>
+
+    <!-- Horizontal line -->
+    <hr class="separator-line">
+
+    
+    <p class="about-description">
+        The potential of nanotechnology is vast and its future applications could transform various industries.
+        From creating new, more efficient energy sources to developing cutting-edge medical treatments, 
+        nanotechnology promises to reshape our world.
+    </p>
+    <p class="about-description">
+        However, with great power comes the need for responsible development and regulation to ensure the 
+        safe and ethical use of this technology for the betterment of society. Nanotechnology has opened a 
+        realm of possibilities that are only beginning to be explored.
+    </p>
+</section>
+
+
+
+   <!-- Applications of Nanotechnology Section -->
+<section id="applications" class="applications-section">
+    <h2 class="section-title">Applications of Nanotechnology</h2>
+
+    <div class="carousel-container">
+        <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <div class="application-carousel" id="application-carousel">
+            <div class="carousel-inner">
+                <div class="application-box">
+                    <h3 class="application-title">Medicine</h3>
+                    <p class="application-description">
+                        Nanotechnology is revolutionizing the field of medicine by enabling targeted drug delivery, 
+                        improved diagnostic techniques, and advanced tissue regeneration.
+                    </p>
+                </div>
+                <div class="application-box">
+                    <h3 class="application-title">Electronics</h3>
+                    <p class="application-description">
+                        In electronics, nanotechnology is used to create smaller, faster, and more efficient components, 
+                        leading to advances in computing power and miniaturization of devices.
+                    </p>
+                </div>
+                <div class="application-box">
+                    <h3 class="application-title">Energy</h3>
+                    <p class="application-description">
+                        Nanotechnology is improving the efficiency of energy production and storage systems, including 
+                        solar cells, batteries, and fuel cells, making them more efficient and cost-effective.
+                    </p>
+                </div>
+                <div class="application-box">
+                    <h3 class="application-title">Environment</h3>
+                    <p class="application-description">
+                        Nanotechnology can help clean up the environment by providing solutions for water filtration, 
+                        air purification, and pollution control.
+                    </p>
+                </div>
+                <div class="application-box">
+                    <h3 class="application-title">Textiles</h3>
+                    <p class="application-description">
+                        Nanotechnology is being used to create durable, water-resistant, and self-cleaning fabrics, revolutionizing the textile industry.
+                    </p>
+                </div>
+                <div class="application-box">
+                    <h3 class="application-title">Agriculture</h3>
+                    <p class="application-description">
+                        Nanotechnology is improving the efficiency of fertilizers, pesticides, and soil management, helping to enhance crop yields.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+</section>
+
+<script>
+    let currentIndex = 0;
+const applicationCarousel = document.getElementById('application-carousel');
+const totalItems = document.querySelectorAll('.application-box').length;
+const itemsPerView = 3; // Number of items visible in the carousel at a time
+
+function moveCarousel(direction) {
+    const maxIndex = totalItems; // Total items
+    currentIndex = (currentIndex + direction + maxIndex) % maxIndex; // Looping logic
+
+    // Adjust the transform property to show the current item
+    const offset = (currentIndex * (100 / itemsPerView));
+    applicationCarousel.style.transform = `translateX(-${offset}%)`;
+}
+
+
+</script>
+
+
+
+
+    <!-- Future Vision Section -->
+    <section id="future" class="future-vision-section">
+        <div class="future-container">
+            <h2>Future Vision</h2>
+            <p>As we continue to innovate at the nanoscale, we envision a future where nanotechnology addresses global challenges such as climate change, healthcare accessibility, and resource scarcity.</p>
+            <img src="future.jpg" alt="Future Vision Image">
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="testimonial-container">
+            <h2>What Our Users Say</h2>
+            <blockquote>
+                <p>"Nanotechnology has transformed the way we approach medicine. The possibilities are endless!"</p>
+                <cite>- Dr. Jane Doe, Nanotech Innovator</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <h2 class="team-title">Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="Photo.jpg" alt="Teammate 1 Photo" class="team-photo">
+                <h3 class="member-name">Gurunath M</h3>
+                <p class="member-description">Web Developer with a passion for creating innovative solutions.</p>
+                <a href="https://www.linkedin.com/in/gurunath-m-24441427b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin-link">LinkedIn</a>
+            </div>
+            <div class="team-member">
+                <img src="Bala.jpeg" alt="Teammate 2 Photo" class="team-photo">
+                <h3 class="member-name">Balavignesh S</h3>
+                <p class="member-description">Designer focused on creating user-friendly interfaces.</p>
+                <br>
+                <a href="https://www.linkedin.com/in/balavignesh-shanmugam-61179728a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin-link">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1>NanoTech</h1>
+                <p>Shaping the Future with Innovation</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#applications">Applications</a></li>
+                    <li><a href="#future">Future Vision</a></li>
+                    <li><a href="#team">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: nanotechnology@gmail.com</p>
+                <p>Phone: 1234567890</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/groups/nanotube/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/Nanotechnology"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/nano-technology"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/nanotechnologynanoscience/?hl=en"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NanoTechnology. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

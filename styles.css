@@ -1,0 +1,731 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0D0D0D; 
+    color: #fff; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(Landingpage.jpg) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+.hero-title {
+    font-size: 3rem;
+    color: white;
+    opacity: 0; /* Initial state */
+    transform: translateY(-50px); /* Slide from above */
+    animation: fadeInUp 1s forwards 0.5s; /* Animation with delay */
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    opacity: 0; 
+    transform: translateY(-20px); 
+    animation: fadeInUp 1s forwards 0.7s; 
+}
+
+.hero-button {
+    padding: 1rem 2rem;
+    background-color: #1dbfaf; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    opacity: 0; 
+    transform: translateY(10px); 
+    animation: fadeInUp 1s forwards 0.9s; 
+    transition: background-color 0.3s ease; 
+}
+
+.hero-button:hover {
+    background-color: #17a28c; 
+}
+
+
+/* Navbar styling */
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: white; 
+}
+
+/* Hide the navigation links by default */
+.nav-links {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Background for the dropdown */
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 150px;
+}
+
+.nav-links li {
+    text-align: left;
+    margin: 0;
+}
+
+.nav-links li a {
+    display: block;
+    padding: 10px;
+    color: white; /* Text color */
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+/* Change background on hover */
+.nav-links li a:hover {
+    background-color: #444;
+}
+
+/* Responsive for mobile or smaller screens */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        width: 100px;
+    }
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* Floating Molecule Styles */
+.floating-molecule {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    opacity: 0.7;
+}
+
+.molecule1 {
+    width: 20px;
+    height: 20px;
+    top: 10%; 
+    left: 5%; 
+    animation: float 6s ease-in-out infinite;
+}
+
+.molecule2 {
+    width: 15px;
+    height: 15px;
+    top: 20%; 
+    left: 15%; 
+    animation: float 5s ease-in-out infinite;
+}
+
+.molecule3 {
+    width: 25px;
+    height: 25px;
+    top: 25%; 
+    left: 25%; 
+    animation: float 4s ease-in-out infinite;
+}
+
+.molecule4 {
+    width: 18px;
+    height: 18px;
+    top: 30%; 
+    left: 35%; 
+    animation: float 6.5s ease-in-out infinite;
+}
+
+.molecule5 {
+    width: 30px;
+    height: 30px;
+    top: 15%; 
+    left: 50%; 
+    animation: float 7s ease-in-out infinite;
+}
+
+.molecule6 {
+    width: 22px;
+    height: 22px;
+    top: 40%; 
+    left: 60%; 
+    animation: float 5.5s ease-in-out infinite;
+}
+
+.molecule7 {
+    width: 20px;
+    height: 20px;
+    top: 55%; 
+    left: 75%; 
+    animation: float 6s ease-in-out infinite;
+}
+
+.molecule8 {
+    width: 15px;
+    height: 15px;
+    top: 45%; 
+    left: 80%; 
+    animation: float 4.5s ease-in-out infinite;
+}
+
+.molecule9 {
+    width: 25px;
+    height: 25px;
+    top: 70%; 
+    left: 10%; 
+    animation: float 6s ease-in-out infinite;
+}
+
+.molecule10 {
+    width: 28px;
+    height: 28px;
+    top: 80%; 
+    left: 40%; 
+    animation: float 7s ease-in-out infinite;
+}
+
+/* Keyframes for floating animation */
+@keyframes float {
+    0% {
+        transform: translateY(0); /* Start position */
+    }
+    50% {
+        transform: translateY(-15px); /* Move up */
+    }
+    100% {
+        transform: translateY(0); /* Return to start position */
+    }
+}
+
+
+.hero-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #1dbfaf; 
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #17a28c;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* About Nanotechnology Section Styles */
+.about-nanotechnology {
+    padding: 50px 20px;
+    background-color: #0e0d0d; 
+    color: #dedede; 
+    text-align: left;
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center; 
+    margin-bottom: 20px;
+    color: #0056b3; 
+}
+
+.about-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify; 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px; 
+}
+
+.center-photo {
+    width: 200px;
+    height: auto;
+    border-radius: 50%; 
+    border: 4px solid #0056b3; 
+    box-shadow: 0 0 20px rgba(0, 86, 179, 0.6); 
+}
+
+.separator-line {
+    border: none;
+    height: 2px;
+    background-color: #0056b3; 
+}
+
+@media (max-width: 768px) {
+    .about-nanotechnology {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+
+    .center-photo {
+        width: 150px;
+    }
+}
+
+
+.image-container {
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 30px; 
+}
+
+.center-photo {
+    
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    justify-content: center;
+    object-fit: cover; 
+    border: 3px solid #333; 
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); 
+    transition: box-shadow 0.3s ease-in-out; 
+}
+
+/* Optional: Add hover effect for a stronger glow */
+.center-photo:hover {
+    box-shadow: 0 0 40px rgba(0, 255, 255, 1); 
+}
+
+
+/* Applications Section Styles */
+.applications-section {
+    padding: 40px 80px;
+    background-color: #2A2A2A;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color:#1dbf;
+    margin-bottom: 40px;
+}
+
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Carousel Track */
+.application-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Application Box */
+.application-box {
+    flex: 1; 
+    background-color: rgb(30, 27, 46);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; 
+    width: 100%;
+    min-width: 300px; /* Ensures proper width in the carousel */
+    margin-right: 20px; /* Space between items */
+}
+
+.application-box:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(0, 86, 179, 0.6); 
+}
+
+/* Carousel Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .application-boxes {
+        flex-direction: column; 
+        gap: 30px;
+    }
+
+    .application-box {
+        max-width: 100%; 
+    }
+}
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Hide overflow */
+}
+
+.application-carousel {
+    display: flex; /* Use flexbox to align items in a row */
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-inner {
+    display: flex; /* Use flex to make the boxes inline */
+}
+
+.application-box {
+    flex: 0 0 30%; /* Change to flex-basis for proper sizing */
+    margin-right: 20px; /* Space between boxes */
+}
+
+/* Remove margin on the last box */
+.application-box:last-child {
+    margin-right: 0;
+}
+
+
+
+/* Future Vision Section Styles */
+.future-vision-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #1A1A1A;
+}
+
+.future-vision-section h2 {
+    font-size: 2.5rem;
+    color: #1dbfaf;
+}
+
+.future-vision-section p {
+    font-size: 1.2rem;
+    color: #e0e0e0; 
+    margin-bottom: 1.5rem;
+}
+
+
+.future-vision-section img{
+    
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    justify-content: center;
+    object-fit: cover; 
+    border: 3px solid #333; 
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); 
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Optional: Add hover effect for a stronger glow */
+.future-vision-section img:hover {
+    box-shadow: 0 0 40px rgba(0, 255, 255, 1); 
+}
+
+/* Testimonial Section Styles */
+.testimonial-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #2A2A2A;
+}
+
+.testimonial-container h2 {
+    font-size: 2.5rem;
+    color: #1dbfaf; 
+}
+
+.testimonial-container blockquote {
+    font-size: 1.5rem;
+    color: #e0e0e0; 
+    margin: 1.5rem 0;
+}
+
+.testimonial-container cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #ccc; 
+}
+
+/* Call to Action Section Styles */
+.cta-section {
+    background-image: linear-gradient(to right, #1dbfaf, #17a28c);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+}
+
+/* Footer Section Styles */
+.footer {
+    background-color: #1A1A1A; 
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 1;
+    margin: 1rem;
+}
+
+.footer-logo h1 {
+    font-size: 2.5rem;
+    color: #1dbfaf; 
+    margin-bottom: 0.5rem;
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    color: #e0e0e0; 
+}
+
+.footer-links {
+    flex: 1;
+    margin: 1rem;
+}
+
+.footer-links h3 {
+    font-size: 1.5rem;
+    color: #1dbfaf; 
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-links ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #1dbfaf; /
+}
+
+.footer-contact {
+    flex: 1;
+    margin: 1rem;
+}
+
+.footer-contact h3 {
+    font-size: 1.5rem;
+    color: #1dbfaf; 
+    margin-bottom: 1rem;
+}
+
+.footer-social {
+    flex: 1;
+    margin: 1rem;
+}
+
+.footer-social h3 {
+    font-size: 1.5rem;
+    color: #1dbfaf; 
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #1dbfaf; 
+}
+
+.footer-bottom {
+    padding: 1rem 0;
+    background-color: #151515; 
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo,
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+        flex: 100%;
+        margin: 1rem 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .about-section h2,
+    .applications-section h2,
+    .future-vision-section h2,
+    .testimonial-section h2,
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+/* Team Section Styles */
+.team-section {
+    background-color: #d4dddb; 
+    padding: 50px 20px; 
+    text-align: center; 
+}
+
+.team-title {
+    font-size: 2.5rem; 
+    color: #333; 
+    margin-bottom: 40px; 
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.team-member {
+    background-color: #f4f4f4; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin: 15px; 
+    width: 200px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
+}
+
+.team-member:hover {
+    transform: scale(1.05); 
+}
+
+.team-photo {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 15px; 
+}
+
+.member-name {
+    font-size: 1.5rem; 
+    color: #333; 
+}
+
+.member-description {
+    font-size: 0.9rem; 
+    color: #555; 
+}
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.linkedin-link {
+    display: inline-block;
+    margin-top: 10px; 
+    text-decoration: none; 
+    color: #0077b5; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+}
+
+.linkedin-link:hover {
+    color: #005582; 
+}
+

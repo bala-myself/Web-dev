@@ -1,0 +1,70 @@
+/* Login Section Styles */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0D0D0D;
+}
+
+.login-container {
+    background-color: #1A1A1A;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 1.5rem;
+    color: #1dbfaf; /* Neon green */
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0; /* Light gray for label */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #1dbfaf; /* Neon green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #17a28c; /* Darker green on hover */
+}
+
+.login-container p {
+    margin-top: 1rem;
+    color: #ccc; /* Slightly darker gray */
+}
+
+.login-container p a {
+    color: #1dbfaf; /* Neon green for links */
+    text-decoration: none;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}

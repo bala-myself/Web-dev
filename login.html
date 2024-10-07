@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Nanotechnology</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <section class="login-section">
+        <div class="login-container">
+            <h1>Login to Your Account</h1>
+            <form id="loginForm" action="#" method="POST">
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+            <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+        </div>
+    </section>
+
+    <!-- JavaScript for redirecting to landing page -->
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Basic validation (In a real app, you would check this data against a database)
+            if (email && password) {
+                // Redirect to the landing page (assuming it's named 'index.html')
+                window.location.href = 'nano.html';
+            } else {
+                alert('Please fill out both fields.');
+            }
+        });
+    </script>
+
+</body>
+</html>
+
